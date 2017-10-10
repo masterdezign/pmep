@@ -12,7 +12,7 @@ import Run (evaluate)
 import Random (drawFrom)
 
 b'mult :: F Number
-b'mult = {s: '*', f: \x y -> Just (x * y)}
+b'mult = {s: "*", f: \x y -> Just (x * y)}
 
 main :: forall e. Eff
   ( console :: CONSOLE

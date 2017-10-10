@@ -19,9 +19,9 @@ showGene (Op f i1 i2) = "Op " <> showF f <> " " <> show i1 <> " " <> show i2
 newtype Chromosome a = Chromosome (Array (Gene a Int))
 
 -- | A function and its symbolic representation
-type F a = { s :: Char
+type F a = { s :: String
            , f :: a -> a -> Maybe a
            }
 
 showF :: forall a. F a -> String
-showF { s: s } = show s
+showF { s: s } = s
